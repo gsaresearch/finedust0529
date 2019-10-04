@@ -221,13 +221,13 @@ let info = function(i)
 {
   i.setup = function()
   {
-    i.createCanvas(300, 700);
+    i.createCanvas(250, 700);
     i.background(0);
     
     i.textSize(20);
     i.fill(255);
-    i.text('Color - Fine dust concentration', 10, 30);
-    i.text('(㎍/㎥)', 230, 70);
+    i.text('Color - Concentration', 10, 30);
+    i.text('(㎍/㎥)', 130, 70);
     i.text('0', 10, 85);
     i.text('10', 10, 281);
     i.text('20', 10, 477);
@@ -239,7 +239,7 @@ let info = function(i)
     for(f = 0; f < 500; ++f)
     {
       i.stroke(255 - f/2, 255, 255);
-      i.line(50, f+80, 255, f+80);
+      i.line(50, f+80, 150, f+80);
     }
   };
 };
