@@ -10,7 +10,7 @@ let graph = function(g)
   g.preload = function()
   {
     table = g.loadTable('0529_data.csv');
-    map = g.loadImage('map.png');
+    map = g.loadImage('map.PNG');
   };
   
   g.setup = function()
