@@ -30,7 +30,7 @@ let graph = function(g)
   g.preload = function()
   {
     table = g.loadTable('0529_data.csv');
-    map = g.loadImage('map.PNG');
+    dustmap = g.loadImage('map.PNG');
   };
   
   g.setup = function()
@@ -100,7 +100,7 @@ let graph = function(g)
     g.translate(0, 0, -150);
     
     g.push();
-      g.texture(map);
+      g.texture(dustmap);
       g.plane(300);
     g.pop();
     
