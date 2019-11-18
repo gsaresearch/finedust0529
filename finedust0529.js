@@ -8,14 +8,6 @@ function setup()
   button2.position(10, 130);
   button2.mouseClicked(button2clicked);
 }
-function button1clicked()
-  {
-    mode = 1;
-  };
-function button2clicked()
-  {
-    mode = 2;
-  };
 
 let graph = function(g)
 {
