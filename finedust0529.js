@@ -1,13 +1,11 @@
-function setup()
-{
-  let botton1, button2;
-  button1 = createButton('pm2.5');
-  button1.position(10, 100);
-  button1.mouseClicked(button1clicked);
-  button2 = createButton('pm10');
-  button2.position(10, 130);
-  button2.mouseClicked(button2clicked);
-}
+let botton1, button2;
+button1 = createButton('total data');
+button1.position(10, 100);
+button1.mouseClicked(button1clicked);
+button2 = createButton('show data gradually');
+button2.position(10, 130);
+button2.mouseClicked(button2clicked);
+
 function button1clicked()
   {
     mode = 1;
