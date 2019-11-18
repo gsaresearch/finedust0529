@@ -1,4 +1,6 @@
 let botton1, button2;
+let mode = 1;
+
 function setup()
 {
   button1 = createButton('total data');
@@ -8,12 +10,19 @@ function setup()
   button2.position(10, 130);
   button2.mouseClicked(button2clicked);
 }
+function button1clicked()
+{
+  mode = 1;
+}
+function button2clicked()
+{
+  mode = 2;
+}
 
 let graph = function(g)
 {
   let valueX = 0;
   let valueZ = 0;
-  let mode = 1;
   let axisZ1, axisZ2, axisZ3, axisZ4, axisZ5;
   let axisX1, axisX2, axisX3;
   let axisY1, axisY2, axisY3;
