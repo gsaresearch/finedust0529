@@ -35,6 +35,7 @@ let graph = function(g)
   
   g.setup = function()
   {
+    g.noStroke();
     g.createCanvas(700, 700, g.WEBGL);
     axisZ1 = g.createGraphics(20, 20);
     axisZ1.fill(255);
@@ -100,6 +101,7 @@ let graph = function(g)
     g.translate(0, 0, -150);
     
     g.push();
+      g.noStroke();
       g.texture(dustmap);
       g.plane(300);
     g.pop();
