@@ -151,6 +151,7 @@ let graph = function(g)
       g.pop();
     }
   
+    g.noStroke();
     g.push();
       g.translate(-140, 150, 2);
       g.rotateX(80);
