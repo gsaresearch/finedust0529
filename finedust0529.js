@@ -108,13 +108,13 @@ let graph = function(g)
       g.box(300,300,100);
     g.pop();
     
-    let row, pointhue, latitude, hight, longitude;
+    let t, row, pointhue, latitude, hight, longitude;
     if(mode === 1)
     {
-      for(let l = 1; l < table.getRowCount(); l++)
+      for(t = 1; t < table.getRowCount(); t++)
       {
         g.push();
-          row = table.getRow(l);
+          row = table.getRow(t);
           pointhue = row.getString(1);
           latitude = -(row.getString(2)-35.230509)*91911.764 - 150;
           hight = row.getString(3)*5 -60;
@@ -129,10 +129,10 @@ let graph = function(g)
     }
     if(mode === 2)
     {
-      l = g.int(g.frameCount/15) % table.getRowCount();
+      t = g.int(g.frameCount/15) % table.getRowCount();
       
       g.push();
-        row = table.getRow(l);
+        row = table.getRow(t);
         pointhue = row.getString(1);
         latitude = (row.getString(2)-35.230509)*91911.764 +100;
         hight = row.getString(3)*5 -60;
