@@ -220,15 +220,6 @@ let graph = function(g)
     valueZ = g.mouseX*0.01;
   };
   
-  g.button1clicked = function()
-  {
-    mode = 1;
-  };
-  g.button2clicked = function()
-  {
-    mode = 2;
-  };
-  
   g.keyTyped = function()
   {
     if(g.key === '1')
