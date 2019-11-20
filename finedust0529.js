@@ -108,7 +108,7 @@ let graph = function(g)
       g.box(300,300,100);
     g.pop();
     
-    let row;
+    let row, pointhue, latitude, hight, longitude;
     if(mode === 1)
     {
       for(let l = 1; l < table.getRowCount(); l++)
